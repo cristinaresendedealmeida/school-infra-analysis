@@ -1,71 +1,38 @@
-# 📊 Data Analysis Project
+README: Data Analysis Project
 
-Este repositório contém o código e os recursos de um projeto de análise de dados focado em avaliar a **infraestrutura básica das escolas no Brasil**, utilizando os dados do **Censo Escolar 2024**.  
+This repository contains the code and resources for a data analysis project focused on assessing the basic infrastructure of schools in Brazil, leveraging the 2024 School Census data. This project demonstrates skills in data engineering, data analysis, and cloud computing.
 
----
+Project Overview
+The main objective of this project is to identify and visualize the gaps in basic infrastructure (water, electricity, and sanitation) in Brazilian schools. By analyzing official data, the project provides valuable insights that can inform strategic decisions and resource allocation to improve the learning environment for children.
 
-## 📌 Project Overview
+Key Features
+Data Source: The project uses the official 2024 School Census microdata, a comprehensive dataset provided by the Brazilian Ministry of Education (MEC).
+Cloud-Native Architecture: The entire data pipeline is built and executed on Microsoft Azure, showcasing proficiency with key cloud services:
+Azure Blob Storage: Used to store the raw CSV dataset, ensuring secure and scalable data residency in the cloud.
+Azure Databricks: A powerful, cloud-based platform for data analytics and Machine Learning. Databricks is used to run the Python code, demonstrating an understanding of professional data environments.
 
-O principal objetivo deste projeto é **identificar e visualizar as lacunas de infraestrutura básica** (água, energia elétrica e saneamento) nas escolas brasileiras.  
+Data Analysis & Visualization
+The project uses the Python libraries pandas, matplotlib, and seaborn to perform data cleaning, aggregation, and to generate insightful visualizations. The final output includes:
+A bar chart showing the percentage of schools lacking basic infrastructure (water, electricity, and sanitation) nationwide.
+A regional breakdown, with bar charts illustrating infrastructure deficiencies per state (UF).
 
-Através da análise de dados oficiais, o projeto gera **insights valiosos** que podem apoiar **decisões estratégicas e alocação de recursos** para melhorar o ambiente escolar das crianças.
+Why This Matters
+This project directly addresses a critical issue in education and child development. By identifying schools in need, the analysis can help organizations like UNICEF to:
+Prioritize regions for intervention and investment.
+Monitor the progress of infrastructure projects over time.
+Provide data-driven evidence to policymakers.
+This approach demonstrates the ability to translate a real-world problem into a data science solution, a key skill for a successful career in this field.
 
----
-
-## ✨ Key Features
-
-### 🔹 Data Source
-- Dados do **Censo Escolar 2024 (microdados)**, fornecido pelo **Ministério da Educação (MEC)**.
-
-### 🔹 Cloud-Native Architecture
-Pipeline construído e executado inteiramente na **nuvem Microsoft Azure**, demonstrando proficiência com serviços essenciais:
-
-- **Azure Blob Storage**: armazenamento seguro e escalável para os arquivos CSV brutos.  
-- **Azure Databricks**: plataforma de análise de dados e Machine Learning em nuvem, utilizada para rodar o código em Python.  
-
-### 🔹 Data Analysis & Visualization
-Ferramentas utilizadas:
-- **pandas** → limpeza e transformação dos dados  
-- **matplotlib** e **seaborn** → visualizações  
-
-Saídas principais:
-- 📉 **Gráfico de barras**: porcentagem de escolas sem infraestrutura básica (água, energia e saneamento) no Brasil.  
-- 🌎 **Quebra regional por UF**: gráficos detalhando as deficiências por estado.  
-
----
-
-## 💡 Why This Matters
-
-Este projeto aborda uma questão crítica na educação e desenvolvimento infantil.  
-
-Os resultados podem ajudar organizações como a **UNICEF** a:  
-- ✅ Priorizar regiões para intervenção e investimento  
-- ✅ Monitorar o progresso de projetos de infraestrutura ao longo do tempo  
-- ✅ Fornecer **evidências baseadas em dados** para formuladores de políticas públicas  
-
-Essa abordagem demonstra a capacidade de **traduzir problemas reais em soluções baseadas em ciência de dados**, uma competência-chave para uma carreira na área.
-
----
-
-## ⚙️ How to Run the Project
-
-### 1. Azure Setup
-- Tenha uma conta **Azure** com um **Databricks Workspace** ativo e um **Storage Account** configurado.  
-
-### 2. Upload Data
-- Carregue o arquivo **`microdados_ed_basica_2024.CSV`** em um contêiner do **Azure Blob Storage**.  
-
-### 3. Run the Notebook
-- Abra o **Databricks Notebook**  
-- Preencha os detalhes da sua **Storage Account** e **Access Key**  
-- Anexe o notebook a um **Databricks Cluster ativo**  
-- Execute o notebook para gerar as análises e visualizações  
-
----
-
-## 📎 Licença
-Este projeto foi desenvolvido para fins educacionais e demonstração de habilidades em ciência de dados e computação em nuvem.
+How to Run the Project
+Azure Setup: Ensure you have an Azure account with an active Databricks workspace and a Storage Account.
+Upload Data: Upload the microdados_ed_basica_2024.CSV file to a container in your Azure Blob Storage.
+Run the Notebook:
+Open the Databricks notebook.
+Fill in your Azure Storage Account details and access key.
+Attach the notebook to an active Databricks cluster.
+Execute the notebook to see the analysis and visualizations.
 
 
-### Dados do Projeto
-O conjunto de dados original está disponível para download neste link: https://storageschoolanalysis.blob.core.windows.net/eof-raw/microdados_ed_basica_2024.csv?sp=r&st=2025-08-22T18:53:38Z&se=2025-11-01T02:59:59Z&spr=https&sv=2024-11-04&sr=b&sig=Ni5%2FsOp2Jwxq7YBbtecw4XU5%2Bj16%2BVNLptkDyW5Xw8M%3D
+
+### Project Data
+The original dataset is available for download at this link: https://storageschoolanalysis.blob.core.windows.net/eof-raw/microdados_ed_basica_2024.csv?sp=r&st=2025-08-22T18:53:38Z&se=2025-11-01T02:59:59Z&spr=https&sv=2024-11-04&sr=b&sig=Ni5%2FsOp2Jwxq7YBbtecw4XU5%2Bj16%2BVNLptkDyW5Xw8M%3D
