@@ -1,8 +1,6 @@
-# 📊 Data Analysis Project for UNICEF
+# 📊 Data Analysis Project
 
 Este repositório contém o código e os recursos de um projeto de análise de dados focado em avaliar a **infraestrutura básica das escolas no Brasil**, utilizando os dados do **Censo Escolar 2024**.  
-
-O projeto demonstra habilidades em **engenharia de dados, análise de dados e computação em nuvem**, essenciais para o programa **UNICEF Data & AI Internship**.
 
 ---
 
